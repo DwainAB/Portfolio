@@ -4,43 +4,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="./Css/style.css">
     <title>Portfolio Site Web</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="max-width">
-            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
-           <ul class="menu">
-               <li><a href="#">Acceuil</a></li>
-               <li><a href="#">À propos</a></li>
-               <li><a href="#">Services</a></li>
-               <li><a href="#">Skills</a></li>
-               <li><a href="#">Projets</a></li>
-               <li><a href="#">Contact</a></li>
-           </ul>
-           <div class="menu-btn" >
-               <i class="fas fa-bars"></i>
-               <i class="far fa-times-circle btn-back"></i>
-           </div>
+
+    <div id="loader">
+        <video id="loader-video" src="/Media/loading-page.mp4" autoplay muted></video>
+    </div>
+
+    <div class="background">
+        <div class="content-video">
+        <video id="video" src="/Media/Pop Smoke - For The Night (Audio) ft. Lil Baby, DaBaby.mp4"></video>
         </div>
+        
+        <div id="content">
+            <p class="content-text" data-text="Press space">Press space</p>
+        </div>
+    </div>
+    
+    <nav id="nav">
+        <ul id="menu">
+            <li class="menu-item">Project</li>
+            <li class="menu-item">Little project</li>
+            <li class="menu-item"><img style="width: 100px;" src="./Media/logo.png" alt=""></li>
+            <li class="menu-item">Skills</li>
+            <li class="menu-item">About me</li>
+        </ul>
     </nav>
 
-                        <!-- Home section start-->
+    <section class="left">
+        <div id="project"></div>
+        <div id="little-project"></div>
+    </section>
 
-    <section class="home" id="home">
-        <div class="max-width">
-            <div class="home-content">
-                <div class="text-1"> Hello my name is </div>
-                <div class="text-2"> Abrivard Dwain </div>
-                <div class="text-3"> And I'm a <span>Développeur</span></div>
+    <section class="right">
+        <div id="skills">
+            <div class="skill">
+                <div style="--crl:#0000FF;--num:90;">
+                    <div></div>
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                    </svg>
+                    <div class="number number-info">
+                        <h2>90<span>%</span></h2>
+                        <p>HTML</p>
+                    </div>
+                </div>
             </div>
+            <div class="skill">
+                <div style="--crl:#04fc43;--num:80;">
+                    <div></div>
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                    </svg>
+                    <div class="number number-info">
+                        <h2>80<span>%</span></h2>
+                        <p>CSS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <div style="--crl:#ffff00;--num:50;">
+                    <div></div>
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                    </svg>
+                    <div class="number number-info">
+                        <h2>50<span>%</span></h2>
+                        <p>JS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <div style="--crl:#00BFFF;--num:30;">
+                    <div></div>
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                    </svg>
+                    <div class="number number-info">
+                        <h2>30<span>%</span></h2>
+                        <p>HTML</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div id="about-me">
+            <p class="about-me-title">Qui je suis ?</p>
+            <p class="about-me-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nisi inventore labore porro voluptatem nesciunt temporibus
+                nulla debitis mollitia repudiandae, quod corrupti consequatur
+                voluptate alias doloribus atque minus quibusdam deleniti? Odit!</p>
+            <p class="about-me-title">Mes Objectif ?</p>
+            <p class="about-me-text">Vivre de ma passion et faire partie des meilleurs dans mon domaine</p>
         </div>
     </section>
 
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, cupiditate consequatur repudiandae laudantium deserunt reprehenderit architecto quod, earum molestiae similique consequuntur sint provident sed velit animi aliquid. Illum, nesciunt tempore.</p>
-
-    <script src="script.js"></script>
+   
+    <script src="./JS/script.js"></script>
 </body>
 </html>
+
