@@ -2,8 +2,6 @@ body{
     margin: 0;
 }
 
-
-
 #loader {
   position: fixed;
   z-index: 9999;
@@ -35,10 +33,10 @@ body{
 
 
 #video{
-    height: 99vh;
+    height: 100vh;
     width: 100vw;
     object-fit: cover;
-    position: fixeheid;
+    position: fixed;
     left: 0;
     right: 0;
     top: 0;
@@ -98,6 +96,24 @@ body{
     left: -25px;
     text-shadow: -2px 0 blue;
     animation: glitch-2 2s 0s linear reverse infinite ;
+}
+
+.player-control{
+  top: 90%;
+  top: 90%;
+  position: absolute;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.content-video{
+  position: relative;
+}
+
+.arrow-left, .play, .arrow-right{
+  font-size: 2.5vw;
+  cursor: pointer;
 }
 
   @keyframes glitch-1 {
@@ -258,7 +274,7 @@ body{
   }
 
   #project, #little-project{
-    height: 100vh;
+    height: 97.5vh;
     width: 0;
     overflow: hidden;
     position: absolute;
@@ -291,7 +307,7 @@ body{
   }
 
   #skills, #about-me{
-    height: 92vh;
+    height: 93vh;
     width: 00%;
     overflow: hidden;
     position: absolute;

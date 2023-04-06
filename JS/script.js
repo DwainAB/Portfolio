@@ -55,6 +55,12 @@ const Project = [
 ]
 //Fin du tableau
 
+//Tableau qui comporte les musiques
+const songs = [
+"../Media/Future-LifeIsGood(OfficialMusicVideo)ft.Drake.mp4",
+"../Media/Pop Smoke - For The Night (Audio) ft. Lil Baby, DaBaby.mp4"
+]
+//Fin du tableau
   
 //Partie qui gère la lecture de la video de fond
 let video = document.getElementById('video')
@@ -77,6 +83,48 @@ function playAndPause(){
 }
 playAndPause()
 //Fin de la partie lecture 
+
+//Partie qui gère les musiques
+const arrowLeft = document.querySelector('.arrow-left')
+const arrowRight = document.querySelector('.arrow-right')
+const play = document.querySelector('.play')
+
+indexMusic = 0
+video.src = songs[indexMusic]
+
+arrowRight.addEventListener('click', () =>{
+  indexMusic++
+
+  if(indexMusic == songs.length){
+    indexMusic = 0
+  }
+
+  video.src = songs[indexMusic]
+  video.play()
+})
+
+arrowLeft.addEventListener('click', () => {
+  indexMusic--
+   
+  if(indexMusic < 0){
+    indexMusic = songs.length -1
+  }
+  video.src = songs[indexMusic]
+  video.play()
+})
+
+play.addEventListener('click', () =>{
+  if (video.paused) {
+    video.play();
+    contentVideo.style.display="none"
+  } else {
+    video.pause();
+    contentVideo.style.display="flex"
+  }
+})
+
+
+//Fin de la partie qui gère les musique
 
 //Partie qui gère l'ouverture de la section de gauche
 function openAndClose() {
