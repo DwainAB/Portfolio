@@ -49,6 +49,11 @@ const Project = [
          "title":"Whatsapp",
          "image": "../Media/whatsapp.png",
          "link": "https://abrivard-dwain-whatsapp.netlify.app/"
+       },
+       {
+        "title":"PokeStarter",
+         "image": "../Media/pokestarter.png",
+         "link": "abrivard-dwain-pokestarter.netlify.app"
        }
    ]
  }
@@ -58,7 +63,8 @@ const Project = [
 //Tableau qui comporte les musiques
 const songs = [
 "../Media/Future-LifeIsGood(OfficialMusicVideo)ft.Drake.mp4",
-"../Media/Pop Smoke - For The Night (Audio) ft. Lil Baby, DaBaby.mp4"
+"../Media/Pop Smoke - For The Night (Audio) ft. Lil Baby, DaBaby.mp4",
+"../Media/Drake, 21 Savage - Spin Bout U (Official Music Video).mp4"
 ]
 //Fin du tableau
   
